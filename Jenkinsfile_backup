@@ -1,3 +1,15 @@
+//SCRIPTED PIPELINE
+node {
+	stage('Build') {
+		echo "Build"
+	}
+	stage('Test') {
+		echo "Test"
+	}
+	stage('Integration Test') {
+		echo "Test"
+	}
+}
 //DECLARATIVE PIPELINE
 pipeline {
 	agent any // It is similar to node. Will be running the agent inside a docker image
