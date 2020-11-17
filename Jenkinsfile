@@ -1,7 +1,11 @@
 //DECLARATIVE PIPELINE
 pipeline {
 	//agent any // It is similar to node. Will be running the agent inside a docker image
-	agent { docker { image 'maven:3.6.3'}}
+	agent { 
+		docker { 
+			image 'maven:3.6.3'
+			} 
+		}
 	stages {
 		stage ('Build') {
 			steps {
